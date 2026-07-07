@@ -1,0 +1,76 @@
+Okay, Saitej, here is an ATS-friendly resume template based on the information you provided.
+
+**Important Notes for ATS-Friendliness:**
+
+1.  **Keywords:** ATS scans for specific keywords. I've used common ones related to your goal (Software Engineer, IT, Python, Java, C, SQL, etc.). Make sure your actual skills match these!
+2.  **Clarity & Format:** Simple, clean layout, standard fonts (like Calibri, Arial, or Lato), and clear headings are preferred. Avoid complex graphics, tables, or text boxes that can confuse ATS.
+3.  **Bullet Points:** Use bullet points under projects and potentially experience (if you get any) to list achievements and responsibilities clearly.
+4.  **Fill in the Blanks:** I've added placeholders `[ ]` for you to fill in specific details like your university, graduation year, and especially your precise skills for P, J, C, S. These are critical for ATS matching.
+5.  **Quantify (When possible):** For projects, if you can quantify impact (e.g., "reduced data entry time by 20%", "supported X number of users"), do so. For this project, it's harder, but future projects could benefit.
+
+---
+
+**[Your Full Name]**
+Saitej Wadekar
++919552778100 | saitejsunilwadekar@gmail.com | [Your LinkedIn Profile URL - *Highly Recommended*] | [Your GitHub Profile URL - *If you have one, also highly recommended*]
+
+---
+
+**1. Professional Summary**
+
+Highly motivated and enthusiastic Bachelor of Engineering (B.E.) in Information Technology graduate with a foundational understanding of programming concepts and a strong eagerness to learn and contribute to the software development lifecycle. Possesses strong analytical and problem-solving skills, demonstrated through academic coursework and a hands-on "Resume Builder" project. Seeking an entry-level Software Engineer position to apply technical knowledge, grow professionally, and contribute to innovative solutions within a dynamic and challenging environment.
+
+---
+
+**2. Skills**
+
+*   **Programming Languages:** Python, Java, C, SQL (Please replace with your actual proficiency, e.g., C++, JavaScript, etc.)
+*   **Tools & Technologies:** Git (Version Control), [Specify IDEs you've used, e.g., VS Code, Eclipse, IntelliJ IDEA], [Add any other relevant tools like Jira, Docker, etc. if you have exposure]
+*   **Operating Systems:** Windows, Linux
+*   **Concepts:** Object-Oriented Programming (OOP), Data Structures, Algorithms, Database Management
+*   **Soft Skills:** Problem-Solving, Analytical Thinking, Teamwork, Communication, Adaptability, Quick Learner
+
+---
+
+**3. Education**
+
+**Bachelor of Engineering (B.E.) in Information Technology**
+[Your University Name], [Your City, State]
+Graduation: [Month, Year] (e.g., May 2024)
+[Optional: Relevant Coursework: List 2-3 most relevant courses like "Data Structures & Algorithms," "Database Management Systems," "Software Engineering"]
+[Optional: GPA/Percentage (if above 7.0/70%): e.g., CGPA: X.X/10 or Percentage: XX%]
+
+---
+
+**4. Experience**
+
+No professional work experience to list at this time. Focused on developing a strong foundational skill set through academic projects and self-study.
+
+---
+
+**5. Project**
+
+**Resume Builder Application**
+[Mention if it's a web application, desktop application, or command-line tool]
+
+*   Designed and developed a user-friendly application to facilitate the creation of professional and ATS-friendly resumes.
+*   Implemented core functionalities allowing users to input and manage personal details, educational qualifications, skills, and project information.
+*   Developed backend logic for data organization and processing to generate structured resume content.
+*   Focused on creating a clear and intuitive user interface to enhance the user experience.
+*   [Optional: Mention specific technologies used, e.g., "Utilized Python for backend logic and a GUI library like Tkinter/PyQt, or HTML/CSS/JavaScript for a web interface."]
+
+---
+
+**6. Career Goal**
+
+Aspiring to secure an entry-level Software Engineer position in a challenging environment where I can leverage my academic knowledge and problem-solving skills. Dedicated to continuous learning and professional growth, with a long-term objective of becoming a proficient and impactful software engineer contributing to innovative solutions and technological advancements.
+
+---
+
+**Before you send this:**
+
+*   **Proofread Carefully:** Check for any typos or grammatical errors.
+*   **Customize:** Fill in all the `[ ]` placeholders with your actual details.
+*   **Skills:** Be very specific about your skills for P, J, C, S. For example, if 'P' is Python, write 'Python'. If 'J' is Java, write 'Java'. If 'c' is C++, write 'C++'. If 'S' is SQL, write 'SQL'. The ATS needs concrete terms.
+*   **LinkedIn/GitHub:** Create a professional LinkedIn profile and a GitHub profile (if you have code to show). These are invaluable for freshers.
+*   **Tailor for Each Application:** While this is a general template, always try to slightly adjust your summary and skills section to match the keywords and requirements of the specific job description you're applying for.
