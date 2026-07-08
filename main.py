@@ -1,35 +1,38 @@
 import os
 from dotenv import load_dotenv
 from google import genai
+from reportlab.platypus import SimpleDocTemplate, Paragraph
+from reportlab.lib.styles import getSampleStyleSheet
 
-# Load environment variables
-load_dotenv()
 
-# Get API key from .env
-API_KEY = os.getenv("API_KEY")
+def buildResume():
 
-if not API_KEY:
-    print("Error: API_KEY not found in .env file")
-    exit()
+    # Load environment variables
+    load_dotenv()
 
-# Create Gemini client
-client = genai.Client(api_key=API_KEY)
+    # Get API Key
+    API_KEY = os.getenv("API_KEY")
 
-print("======= AI Resume Builder =======\n")
+    if not API_KEY:
+        print("Error: API_KEY not found")
+        return
 
-name = input("Enter Name: ")
-email = input("Enter Email: ")
-phone = input("Enter Phone: ")
-education = input("Enter Education: ")
-skills = input("Enter Skills: ")
-experience = input("Enter Experience: ")
-project = input("Enter Project Name: ")
-career_goal = input("Enter Career Goal: ")
+    # Create Gemini Client
+    client = genai.Client(api_key=API_KEY)
 
-prompt = f"""
+    print("======= AI Resume Builder =======")
+
+    name = input("Enter Name: ")
+    email = input("Enter Email: ")
+    phone = input("Enter Phone: ")
+    education = input("Enter Education: ")
+    skills = input("Enter Skills: ")
+    experience = input("Enter Experience: ")
+    project = input("Enter Project Name: ")
+    career_goal = input("Enter Career Goal: ")
+
+    prompt = f"""
 Create a professional ATS-friendly resume.
-
-Candidate Details:
 
 Name: {name}
 Email: {email}
@@ -39,29 +42,24 @@ Skills: {skills}
 Experience: {experience}
 Project: {project}
 Career Goal: {career_goal}
-
-Generate the resume with the following sections:
-1. Professional Summary
-2. Skills
-3. Education
-4. Experience
-5. Project
-6. Career Goal
 """
 
-response = client.models.generate_content(
-    model="gemini-2.5-flash",
-    contents=prompt
-)
+    response = client.models.generate_content(
+        model="gemini-2.5-flash",
+        contents=prompt
+    )
 
-print("\n===== Generated Resume =====\n")
-print(response.text)
+    print("\n===== Generated Resume =====\n")
+    print(response.text)
 
+    # Create PDF
+    doc = SimpleDocTemplate("resume.pdf")
+    styles = getSampleStyleSheet()
+    story = []
 
-textResponse = response.text
+    for line in response.text.split("\n"):
+        story.append(Paragraph(line, styles["Normal"]))
 
-file2 = open("resume.txt", "w", encoding="utf-8")
-file2.write(textResponse)
-file2.close()
+    doc.build(story)
 
-print("Resume saved successfully as resume.txt")
+    print("Resume saved successfully as resume.pdf")
